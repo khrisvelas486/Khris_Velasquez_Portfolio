@@ -726,8 +726,19 @@ a:hover{
     }
     #jumboTron {
         position: absolute;
-        top: 20%;
-        left: 7%;
+        top: 10%;
+        left: 3%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #heroSection {
+        position: relative;
+    }
+    #jumboTron {
+        position: absolute;
+        top: 10%;
+        left: 3%;
     }
 }
 
