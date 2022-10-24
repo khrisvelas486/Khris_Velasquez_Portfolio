@@ -43,6 +43,12 @@ body {
 .nav-link:hover{
     color:grey;
 }
+
+/*-----MOBILE NAV BAR-------*/
+#mob-nav {
+  display: none;
+}
+
 /* Hero Section */
 
 #heroSection {
@@ -618,21 +624,179 @@ a:hover{
   hr {
     border-color: rgba(255,255,255,.6);
   }
+
+  /*---------Case Study Section-------------*/
+
+  .flex-btn {
+    display: flex;
+    margin-top: 10px;
+  }
   
   /* Begin Media Queries*/
 
   @media screen and (max-width: 320px){
 	.rw-sentence { font-size: 9px; }
+  
 }
+
 
   @media screen and (max-width: 410px) {
     .send-button {
       width: 99%;
     }
+
+    #infoText {
+      margin: 60px 0 0 0;
+      color: white;
+      font-size: 62px;
+  }
+
+  .section-header{
+    font-size: xx-large;
+  }
+
+  .contact-list{
+    margin-left: -50px;
+    font-size: x-small;
+  }
+
   }
 
   @media screen and (max-width: 569px) {
+
+    #main-nav {
+      display: none;
+    }
+
+    .navbar-toggler-icon {
+      width: 2em;
+      height: 2em;
+    }
+
+
+    #mob-nav {
+      display: block;
+      background-image: url(../images/Case\ Study\ BG.png);
+      background-repeat: round;
+      background-color: #000000;
+    }
   
+    #footerSection {
+      background-image: url(../images/Case\ Study\ BG.png);
+      background-repeat: round;
+      background-color: #000000 !important;
+    }
+    #footerRight {
+      width: 50% !important;
+    }
+  /*index homepage******************/  
+    .rw-wrapper {
+      display: none;
+    }
+
+    #left-row {
+      display: grid;
+    }
+
+    #heroSection {
+      margin-top: 93px;
+      height: 100%;
+    }
+  /*About Section*************/
+    #aboutSection {
+      margin-top: 15%;
+    }
+
+    .txt-About {
+      font-family: 'Lora';
+      font-size: large;
+    }
+
+    #top-header {
+      margin-top: 10%;
+    }
+
+    .secondary-title.text-center {
+      font-size: xx-large;
+      border-bottom: groove 2px white;
+      padding-top: 5%;
+    }
+
+    #profilePic{
+      display: none;
+    }
+
+    .picture-me{
+      display: none;
+      position: relative;
+      left: 100%;
+      bottom: 50%;
+    }
+/*Project Section****************/
+    #project-section {
+      margin-top: 15%;
+    }
+
+    #top-project {
+      width: 100%;
+    }
+
+/*Contact Section****************/
+    #contact{
+      margin-top: 25%;
+    }
+    .section-header{
+      width: 100%;
+      font-size: xxx-large;
+    }
+    #bg-cover {
+      height: 0%;
+    }
+
+    .direct-contact-container{
+      margin-top:0px !important;
+      max-width: 100% !important;
+      margin: 0px !important;
+    }
+
+    #infoStuff {
+      display: inline;
+    }
+
+    span {
+      line-height: 1.25 !important;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .nav-link.active {
+      font-style: italic;
+      letter-spacing: 1px;
+      color: grey !important;
+    }
+
+    .dropdown-item.active {
+      background-color: #6d0000;
+    }
+    
+    .offcanvas.offcanvas-end {
+      border-left: none;
+    }
+    .offcanvas-header {
+      background-color: #6d0000;
+      color: lightgrey;
+      border-bottom: #efefef 3px solid;
+    }
+    .offcanvas-body {
+      background-color: #352335;
+    }
+
+    .dropdown-menu.show {
+      background-color: lightgrey;
+
+    }
     .direct-contact-container, .form-wrapper {
       float: none;
       margin: 0 auto;
