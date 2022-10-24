@@ -666,6 +666,10 @@ a:hover{
     #aboutSection {
       margin-top: 20% !important;
     }
+
+    #project-section {
+      margin-top: 22% !important;
+    }
   }
 
   @media screen and (max-width: 569px) {
